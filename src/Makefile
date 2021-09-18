@@ -7,7 +7,7 @@ monosolve: monosolve.o dict.o score_words.o
 clean:
 	rm *.o monosolve
 
-install:
+install: monosolve
 	mkdir -p ../bin
 	cp monosolve ../bin
 

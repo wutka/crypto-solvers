@@ -36,7 +36,6 @@ int load_dawg(char *filename)
         dawg_len = 0;
     }
 
-    printf("dawg file size = %ld\n", statbuf.st_size);
     dawg = (int *) malloc(statbuf.st_size);
 
     while (fread(&entry, 1, 4, infile) == 4)
